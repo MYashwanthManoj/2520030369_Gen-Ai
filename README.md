@@ -26,6 +26,17 @@ This repository contains the laboratory assignments and practical implementation
 │   ├── Week4/                       # Week 4: Subword Tokenizer Comparison (English, Telugu, Hindi)
 │   │   ├── tokenizer_comparison.py
 │   │   └── requirements.txt
+│   ├── week5/                       # Week 5: Token Economics & Budget Modeling
+│   │   ├── token_economics.py
+│   │   ├── test_economics.py
+│   │   ├── budget_report.json
+│   │   └── README.md
+│   ├── week6/                       # Week 6: Baseline Evaluation & Golden Dataset Testing
+│   │   ├── baseline_evaluator.py
+│   │   ├── test_baseline.py
+│   │   ├── golden_dataset.json
+│   │   ├── baseline_run_v0.1.json
+│   │   └── README.md
 │   └── CO2/                         # Course Outcome 2 Labs
 │       ├── week7/                   # Week 7 (CO2 Week 1): Next-Token Probabilities & Logits (GPT-2)
 │       │   ├── next_token_prob.py
@@ -59,6 +70,13 @@ This repository contains the laboratory assignments and practical implementation
   - Byte-Pair Encoding (`gpt2`)
   - WordPiece (`bert-base-multilingual-cased`)
   - SentencePiece (`xlm-roberta-base`)
+
+### Week 5: Token Economics & Budget Modeling
+- Implements budget simulations, context-window token forecasting, cost trade-off analysis across multiple model tiers (e.g., flash vs. pro), and exports JSON budget reports.
+
+### Week 6: Baseline Evaluation & Golden Dataset Testing
+- Sets up automated evaluation against curated golden reference test sets (`golden_dataset.json`).
+- Measures answer accuracy, exact match, semantic similarity scores, latency bounds, and outputs evaluation run artifact (`baseline_run_v0.1.json`).
 
 ### CO2 Week 7: Next-Token Probabilities, Logits & Decoding Analysis (GPT-2)
 - Loads `openai-community/gpt2` to analyze subword tokenization and compute raw logit vectors across all 50,257 vocabulary tokens.

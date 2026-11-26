@@ -1,0 +1,43 @@
+[
+    {
+        "id": "GQ-001",
+        "category": "Factual / Architecture",
+        "question": "What is the primary role of the Transformer self-attention mechanism?",
+        "expected_answer": "It computes pairwise attention weights across all tokens in a sequence simultaneously, allowing the model to dynamically weight the relevance of every token regardless of distance.",
+        "source": "Attention Is All You Need (Vaswani et al., 2017) / Deep Learning Textbook",
+        "tags": ["transformer", "attention", "foundations"]
+    },
+    {
+        "id": "GQ-002",
+        "category": "Operational / Cost & Monitoring",
+        "question": "Why should API token usage and latency be tracked per call in LLM applications?",
+        "expected_answer": "To monitor operational unit economics, detect latency spikes or regressions, enforce rate limits, prevent prompt injection runaway costs, and budget infrastructure scaling.",
+        "source": "12-Factor App & Production LLM Patterns / Experiment 3 & 5 Guide",
+        "tags": ["token-economics", "observability", "production"]
+    },
+    {
+        "id": "GQ-003",
+        "category": "NLP / Tokenization",
+        "question": "How does Byte-Pair Encoding (BPE) differ from WordPiece tokenization?",
+        "expected_answer": "BPE merges the most frequent adjacent symbol pair based on raw frequency counts, whereas WordPiece selects the pair that maximizes the likelihood of the language model training data.",
+        "source": "HuggingFace NLP Course & Sennrich et al. (2016)",
+        "tags": ["tokenization", "bpe", "wordpiece"]
+    },
+    {
+        "id": "GQ-004",
+        "category": "Engineering / Client Design",
+        "question": "What is the benefit of building a provider-agnostic LLM client interface?",
+        "expected_answer": "It abstracts vendor-specific API implementations, enabling hot-swapping between hosted models (OpenAI, Gemini) and local weights (Ollama) without breaking business application code.",
+        "source": "Software Architecture Patterns / Experiment 2 Guide",
+        "tags": ["design-patterns", "abstraction", "ollama"]
+    },
+    {
+        "id": "GQ-005",
+        "category": "Reliability / Resilience",
+        "question": "What mechanisms mitigate 429 Rate Limit errors and network timeouts when calling LLM endpoints?",
+        "expected_answer": "Exponential backoff with jitter, client-side token bucket rate limiting, semantic caching, and fallback routing to secondary provider tiers.",
+        "source": "OpenAI / Google Cloud Resilience Best Practices",
+        "tags": ["rate-limiting", "reliability", "exponential-backoff"]
+    }
+]
+

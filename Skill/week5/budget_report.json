@@ -1,0 +1,101 @@
+{
+    "feature_spec": {
+        "feature_name": "Smart Document Search & QnA Chatbot",
+        "expected_daily_active_users": 1500,
+        "queries_per_user_per_day": 4,
+        "avg_input_tokens_per_call": 1200,
+        "avg_output_tokens_per_call": 350,
+        "peak_concurrency_multiplier": 2.5
+    },
+    "daily_volume": {
+        "daily_calls": 6000,
+        "monthly_calls": 180000,
+        "daily_input_tokens": 7200000,
+        "daily_output_tokens": 2100000,
+        "total_daily_tokens": 9300000
+    },
+    "rate_limit_requirements": {
+        "peak_rpm_needed": 31.3,
+        "peak_tpm_needed": 48437.5
+    },
+    "model_cost_evaluations": [
+        {
+            "model": "gpt-4o",
+            "daily_input_cost_usd": 18.0,
+            "daily_output_cost_usd": 21.0,
+            "daily_total_cost_usd": 39.0,
+            "monthly_total_cost_usd": 1170.0,
+            "model_rpm_limit": 500,
+            "model_tpm_limit": 30000,
+            "peak_rpm_needed": 31.3,
+            "peak_tpm_needed": 48437.5,
+            "rate_limit_status": "TIER_UPGRADE_OR_RATE_LIMITER_REQUIRED",
+            "description": "OpenAI flagship multi-modal model"
+        },
+        {
+            "model": "gpt-4o-mini",
+            "daily_input_cost_usd": 1.08,
+            "daily_output_cost_usd": 1.26,
+            "daily_total_cost_usd": 2.34,
+            "monthly_total_cost_usd": 70.2,
+            "model_rpm_limit": 5000,
+            "model_tpm_limit": 200000,
+            "peak_rpm_needed": 31.3,
+            "peak_tpm_needed": 48437.5,
+            "rate_limit_status": "VIABLE",
+            "description": "Fast and cheap lightweight reasoning model"
+        },
+        {
+            "model": "claude-3-5-sonnet",
+            "daily_input_cost_usd": 21.6,
+            "daily_output_cost_usd": 31.5,
+            "daily_total_cost_usd": 53.1,
+            "monthly_total_cost_usd": 1593.0,
+            "model_rpm_limit": 1000,
+            "model_tpm_limit": 40000,
+            "peak_rpm_needed": 31.3,
+            "peak_tpm_needed": 48437.5,
+            "rate_limit_status": "TIER_UPGRADE_OR_RATE_LIMITER_REQUIRED",
+            "description": "Anthropic high-capability coding & reasoning model"
+        },
+        {
+            "model": "gemini-1.5-flash",
+            "daily_input_cost_usd": 0.54,
+            "daily_output_cost_usd": 0.63,
+            "daily_total_cost_usd": 1.17,
+            "monthly_total_cost_usd": 35.1,
+            "model_rpm_limit": 2000,
+            "model_tpm_limit": 4000000,
+            "peak_rpm_needed": 31.3,
+            "peak_tpm_needed": 48437.5,
+            "rate_limit_status": "VIABLE",
+            "description": "Google high-speed cost-efficient long-context model"
+        },
+        {
+            "model": "gemini-1.5-pro",
+            "daily_input_cost_usd": 9.0,
+            "daily_output_cost_usd": 10.5,
+            "daily_total_cost_usd": 19.5,
+            "monthly_total_cost_usd": 585.0,
+            "model_rpm_limit": 360,
+            "model_tpm_limit": 2000000,
+            "peak_rpm_needed": 31.3,
+            "peak_tpm_needed": 48437.5,
+            "rate_limit_status": "VIABLE",
+            "description": "Google flagship multimodal reasoning model"
+        },
+        {
+            "model": "ollama-local (llama3/mistral)",
+            "daily_input_cost_usd": 0.0,
+            "daily_output_cost_usd": 0.0,
+            "daily_total_cost_usd": 0.0,
+            "monthly_total_cost_usd": 0.0,
+            "model_rpm_limit": 60,
+            "model_tpm_limit": 5000,
+            "peak_rpm_needed": 31.3,
+            "peak_tpm_needed": 48437.5,
+            "rate_limit_status": "TIER_UPGRADE_OR_RATE_LIMITER_REQUIRED",
+            "description": "Self-hosted local open-weights model"
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "release": "release v0.1",
+    "timestamp": "2026-11-14 10:49:44",
+    "summary": {
+        "total_questions": 5,
+        "passed": 5,
+        "failed": 0,
+        "pass_rate_pct": 100.0,
+        "avg_f1_score": 0.8665,
+        "avg_latency_ms": 120.0
+    },
+    "evaluations": [
+        {
+            "id": "GQ-001",
+            "category": "Factual / Architecture",
+            "question": "What is the primary role of the Transformer self-attention mechanism?",
+            "expected_answer": "It computes pairwise attention weights across all tokens in a sequence simultaneously, allowing the model to dynamically weight the relevance of every token regardless of distance.",
+            "generated_answer": "The self-attention mechanism computes pairwise attention weights across all tokens in a sequence simultaneously, allowing the model to dynamically weight token relevance regardless of distance.",
+            "source": "Attention Is All You Need (Vaswani et al., 2017) / Deep Learning Textbook",
+            "latency_ms": 120.0,
+            "metrics": {
+                "precision": 0.9167,
+                "recall": 0.9167,
+                "f1_score": 0.9167
+            },
+            "status": "PASS"
+        },
+        {
+            "id": "GQ-002",
+            "category": "Operational / Cost & Monitoring",
+            "question": "Why should API token usage and latency be tracked per call in LLM applications?",
+            "expected_answer": "To monitor operational unit economics, detect latency spikes or regressions, enforce rate limits, prevent prompt injection runaway costs, and budget infrastructure scaling.",
+            "generated_answer": "Tracking token usage and latency per call is critical to monitor operational unit economics, detect latency spikes, enforce rate limits, prevent runaway costs, and budget scaling.",
+            "source": "12-Factor App & Production LLM Patterns / Experiment 3 & 5 Guide",
+            "latency_ms": 120.0,
+            "metrics": {
+                "precision": 0.7083,
+                "recall": 0.7727,
+                "f1_score": 0.7391
+            },
+            "status": "PASS"
+        },
+        {
+            "id": "GQ-003",
+            "category": "NLP / Tokenization",
+            "question": "How does Byte-Pair Encoding (BPE) differ from WordPiece tokenization?",
+            "expected_answer": "BPE merges the most frequent adjacent symbol pair based on raw frequency counts, whereas WordPiece selects the pair that maximizes the likelihood of the language model training data.",
+            "generated_answer": "BPE merges the most frequent adjacent symbol pair based on raw frequency counts, whereas WordPiece selects the pair that maximizes the likelihood of the language model training data.",
+            "source": "HuggingFace NLP Course & Sennrich et al. (2016)",
+            "latency_ms": 120.0,
+            "metrics": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1_score": 1.0
+            },
+            "status": "PASS"
+        },
+        {
+            "id": "GQ-004",
+            "category": "Engineering / Client Design",
+            "question": "What is the benefit of building a provider-agnostic LLM client interface?",
+            "expected_answer": "It abstracts vendor-specific API implementations, enabling hot-swapping between hosted models (OpenAI, Gemini) and local weights (Ollama) without breaking business application code.",
+            "generated_answer": "A provider-agnostic LLM interface abstracts vendor-specific API implementations, enabling seamless hot-swapping between hosted APIs and local Ollama models without breaking application code.",
+            "source": "Software Architecture Patterns / Experiment 2 Guide",
+            "latency_ms": 120.0,
+            "metrics": {
+                "precision": 0.72,
+                "recall": 0.7826,
+                "f1_score": 0.75
+            },
+            "status": "PASS"
+        },
+        {
+            "id": "GQ-005",
+            "category": "Reliability / Resilience",
+            "question": "What mechanisms mitigate 429 Rate Limit errors and network timeouts when calling LLM endpoints?",
+            "expected_answer": "Exponential backoff with jitter, client-side token bucket rate limiting, semantic caching, and fallback routing to secondary provider tiers.",
+            "generated_answer": "Mitigation mechanisms include exponential backoff with jitter, client-side token bucket rate limiting, semantic caching, and fallback routing to secondary provider tiers.",
+            "source": "OpenAI / Google Cloud Resilience Best Practices",
+            "latency_ms": 120.0,
+            "metrics": {
+                "precision": 0.8636,
+                "recall": 1.0,
+                "f1_score": 0.9268
+            },
+            "status": "PASS"
+        }
+    ]
+}
