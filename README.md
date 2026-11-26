@@ -23,10 +23,21 @@ This repository contains the laboratory assignments and practical implementation
 │   │   ├── test_client.py
 │   │   ├── requirements.txt
 │   │   └── .env.example
-│   └── Week4/                       # Week 4: Subword Tokenizer Comparison (English, Telugu, Hindi)
-│       ├── tokenizer_comparison.py
-│       └── requirements.txt
-└── test.txt
+│   ├── Week4/                       # Week 4: Subword Tokenizer Comparison (English, Telugu, Hindi)
+│   │   ├── tokenizer_comparison.py
+│   │   └── requirements.txt
+│   └── CO2/                         # Course Outcome 2 Labs
+│       ├── week7/                   # Week 7 (CO2 Week 1): Next-Token Probabilities & Logits (GPT-2)
+│       │   ├── next_token_prob.py
+│       │   ├── requirements.txt
+│       │   └── gpt2_next_token_results.csv
+│       └── week8/                   # Week 8 (CO2 Week 2): Attention Mechanisms from Scratch (Pure PyTorch)
+│           ├── attention.py
+│           ├── demo.py
+│           ├── interactive_attention.py
+│           ├── test_attention.py
+│           ├── requirements.txt
+│           └── README.md
 ```
 
 ## Lab Overviews
@@ -48,3 +59,15 @@ This repository contains the laboratory assignments and practical implementation
   - Byte-Pair Encoding (`gpt2`)
   - WordPiece (`bert-base-multilingual-cased`)
   - SentencePiece (`xlm-roberta-base`)
+
+### CO2 Week 7: Next-Token Probabilities, Logits & Decoding Analysis (GPT-2)
+- Loads `openai-community/gpt2` to analyze subword tokenization and compute raw logit vectors across all 50,257 vocabulary tokens.
+- Explores temperature scaling ($T = 0.2, 1.0, 2.0$) and softmax to control deterministic vs. creative decoding distributions.
+- Extracts top-$K$ candidate tokens, visualizes probability bars, and exports all experiment runs to CSV.
+
+### CO2 Week 8: Attention Mechanisms from Scratch (Pure PyTorch)
+- Implements core Transformer building blocks from scratch following *"Attention Is All You Need"* (Vaswani et al., 2017).
+- **Scaled Dot-Product Attention:** $\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}} + M\right)V$.
+- **Causal Masking:** Autoregressive upper-triangular masking for generative decoding.
+- **Multi-Head Attention (MHA):** Multi-head linear projections, head splitting, scaled dot-product attention, and concatenation projection.
+- **Cross-Attention & Equivalence:** Verified mathematically against PyTorch native `torch.nn.MultiheadAttention`.

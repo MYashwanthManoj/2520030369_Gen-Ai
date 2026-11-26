@@ -1,0 +1,73 @@
+﻿Prompt,Temperature,Rank,Token ID,Candidate Token,Raw Logit,Scaled Logit,Probability (%)
+what is the name of iron man,1.0,1,1701,"'?""'",-61.8039,-61.8039,22.19
+what is the name of iron man,1.0,2,30,'?',-61.9431,-61.9431,19.31
+what is the name of iron man,1.0,3,10091,'?)',-62.5882,-62.5882,10.13
+what is the name of iron man,1.0,4,338,"""'s""",-63.3996,-63.3996,4.5
+what is the name of iron man,1.0,5,29865,'?).',-63.477,-63.477,4.16
+what is the name of iron man,1.0,6,11,"','",-63.4903,-63.4903,4.11
+what is the capital of india,1.5,1,1701,"'?""'",-69.695,-46.4633,7.18
+what is the capital of india,1.5,2,30,'?',-70.1629,-46.7753,5.26
+what is the capital of india,1.5,3,10091,'?)',-71.2729,-47.5153,2.51
+what is the capital of india,1.5,4,11,"','",-71.3797,-47.5865,2.34
+what is the capital of india,1.5,5,290,' and',-71.4492,-47.6328,2.23
+what is the capital of india,1.5,6,35379,"'?"",'",-71.893,-47.9287,1.66
+what is the capital of india,1.5,7,287,' in',-72.315,-48.21,1.25
+what is the capital of india,1.5,8,33924,"'?),'",-72.4668,-48.3112,1.13
+what is the capital of india,1.5,9,284,' to',-72.6107,-48.4071,1.03
+what is the capital of india,1.5,10,8,')',-72.6218,-48.4146,1.02
+what is the capital of india,1.5,11,29865,'?).',-72.6794,-48.4529,0.98
+what is the capital of india,1.5,12,43634,"'?"".'",-72.9896,-48.6597,0.8
+what is the capital of india,1.5,13,326,' that',-73.0029,-48.6686,0.79
+what is the capital of india,1.5,14,329,' for',-73.0139,-48.6759,0.79
+what is the capital of india,1.5,15,1,"'""'",-73.1434,-48.7623,0.72
+what is the capital of india,1.5,16,8348,"""?'""",-73.3362,-48.8908,0.63
+what is the capital of india,1.5,17,6949,' anyway',-73.3443,-48.8962,0.63
+what is the capital of india,1.5,18,393,' or',-73.3779,-48.9186,0.62
+what is the capital of india,1.5,19,553,"',""'",-73.4032,-48.9355,0.61
+what is the capital of india,1.5,20,19427,')?',-73.4479,-48.9653,0.59
+what is the capital of india,1.5,21,783,' now',-73.4972,-48.9981,0.57
+what is the capital of india,1.5,22,338,"""'s""",-73.5883,-49.0589,0.54
+what is the capital of india,1.5,23,5633,' ?',-73.73,-49.1533,0.49
+what is the capital of india,1.5,24,13984,"'""?'",-73.7438,-49.1625,0.48
+what is the capital of india,1.5,25,379,' at',-73.7461,-49.1641,0.48
+what is the capital of india,1.5,26,1909,' today',-73.8212,-49.2142,0.46
+what is the capital of india,1.5,27,351,' with',-73.8246,-49.2164,0.46
+what is the capital of india,1.5,28,319,' on',-73.8517,-49.2344,0.45
+what is the capital of india,1.5,29,4943,"'"")'",-73.9176,-49.2784,0.43
+what is the capital of india,1.5,30,1600,"'"",'",-73.9296,-49.2864,0.43
+what is the capital of india,1.5,31,3548,'??',-73.9541,-49.3027,0.42
+what is the capital of india,1.5,32,828,"'),'",-74.0164,-49.3443,0.4
+what is the capital of india,1.5,33,14,'/',-74.1496,-49.4331,0.37
+what is the capital of india,1.5,34,355,' as',-74.277,-49.518,0.34
+what is the capital of india,1.5,35,611,' if',-74.297,-49.5313,0.33
+what is the capital of india,1.5,36,26398,'?]',-74.3197,-49.5465,0.33
+what is the capital of india,1.5,37,543,' which',-74.3574,-49.5716,0.32
+what is the capital of india,1.5,38,25,':',-74.3763,-49.5842,0.32
+what is the capital of india,1.5,39,13,'.',-74.4299,-49.6199,0.31
+what is the capital of india,1.5,40,475,' but',-74.4874,-49.6583,0.29
+what is the capital of india,1.5,41,588,' like',-74.521,-49.6806,0.29
+what is the capital of india,1.5,42,826,' right',-74.617,-49.7447,0.27
+what is the capital of india,1.5,43,994,' here',-74.6312,-49.7542,0.27
+what is the capital of india,1.5,44,286,' of',-74.6338,-49.7559,0.27
+what is the capital of india,1.5,45,546,' about',-74.6366,-49.7577,0.27
+what is the capital of india,1.5,46,21747,"'?,'",-74.6385,-49.759,0.27
+what is the capital of india,1.5,47,737,').',-74.705,-49.8033,0.25
+what is the capital of india,1.5,48,523,' so',-74.705,-49.8033,0.25
+what is the capital of india,1.5,49,26989,"'?\'""'",-74.7388,-49.8259,0.25
+what is the capital of india,1.5,50,810,' where',-74.7761,-49.8508,0.24
+what is the capital of india New,1.0,1,12517,' Delhi',-58.0237,-58.0237,43.43
+what is the capital of india New,1.0,2,1971,' York',-58.8365,-58.8365,19.27
+what is the capital of india New,1.0,3,8936,' Zealand',-59.8732,-59.8732,6.83
+what is the capital of india New,1.0,4,22777,' Guinea',-60.971,-60.971,2.28
+what is the capital of india New,1.0,5,2520,' South',-60.9753,-60.9753,2.27
+what is the capital of india New,1.0,6,6280,' Year',-61.4316,-61.4316,1.44
+The capital of France is,1.0,1,262,' the',-100.2498,-100.2498,8.46
+The capital of France is,1.0,2,783,' now',-100.8175,-100.8175,4.79
+The capital of France is,1.0,3,257,' a',-100.8555,-100.8555,4.62
+The capital of France is,1.0,4,4881,' France',-101.2102,-101.2102,3.24
+The capital of France is,1.0,5,6342,' Paris',-101.2143,-101.2143,3.22
+The capital of France is,1.0,1,262,' the',-100.2498,-100.2498,8.46
+The capital of France is,1.0,2,783,' now',-100.8175,-100.8175,4.79
+The capital of France is,1.0,3,257,' a',-100.8555,-100.8555,4.62
+The capital of France is,1.0,4,4881,' France',-101.2102,-101.2102,3.24
+The capital of France is,1.0,5,6342,' Paris',-101.2143,-101.2143,3.22
